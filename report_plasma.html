@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plasma 項目頁 - HiCrypto</title>
+    <style>
+        :root {
+            --accent-color: #BCFF2F;
+            --bg-color: #1a1a1a;
+            --surface-color: #242424;
+            --text-primary: #FFFFFF;
+            --text-secondary: #a0a0a0;
+            --border-color: #4d4d4d;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+        body { background-color: var(--bg-color); color: var(--text-primary); font-family: 'Noto Sans TC', sans-serif; margin: 0; -webkit-font-smoothing: antialiased; }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 2rem; }
+        .header { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 0; border-bottom: 1px solid var(--border-color); margin-bottom: 3rem; }
+        .logo { font-size: 1.8rem; font-weight: 700; color: var(--text-primary); text-decoration: none; }
+        .logo span { color: var(--accent-color); font-weight: 700; }
+        .nav a { color: var(--text-secondary); text-decoration: none; margin-left: 2rem; font-weight: 500; transition: color 0.3s ease; }
+        .nav a:hover { color: var(--text-primary); }
+        .report-header { text-align: center; margin-bottom: 3rem; }
+        .project-title { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 0.5rem; }
+        .project-logo { width: 60px; height: 60px; border-radius: 50%; background-color: #333; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 2rem; }
+        .report-header h1 { font-size: 3rem; margin: 0; }
+        .metrics-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 3rem; text-align: center; }
+        .metric-item { background-color: var(--surface-color); padding: 1.5rem; border-radius: 12px; }
+        .metric-item .label { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .metric-item .value { font-size: 1.8rem; font-weight: 700; color: var(--accent-color); }
+        .project-intro { background-color: var(--surface-color); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; border: 1px solid var(--accent-color); box-shadow: 0 0 15px rgba(188, 255, 47, 0.1); }
+        .project-intro h2 { margin-top: 0; color: var(--accent-color); }
+        .notes-section h2 { color: var(--accent-color); border-bottom: 1px solid var(--border-color); padding-bottom: 0.5em; margin-bottom: 1.5em; }
+        .notes-list { list-style: none; padding: 0; }
+        .note-item a { text-decoration: none; color: inherit; }
+        .note-item { background-color: var(--surface-color); border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 1rem; border: 1px solid var(--border-color); transition: transform 0.3s ease, border-color 0.3s ease; }
+        .note-item:hover { transform: translateY(-5px); border-color: var(--accent-color); }
+        .note-title { font-size: 1.3rem; font-weight: 700; margin: 0 0 0.5rem 0; color: var(--text-primary); }
+        .note-meta { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem; }
+        .note-excerpt { color: var(--text-secondary); line-height: 1.7; }
+        .footer { text-align: center; padding: 4rem 0 2rem; border-top: 1px solid var(--border-color); margin-top: 4rem; color: var(--text-secondary); font-size: 0.9rem; }
+        .footer p { margin: 0.5rem 0; }
+    </style>
+</head>
+<body>
+    <header class="header container">
+        <a href="index.html" class="logo"><span>Hi</span>Crypto</a>
+        <nav class="nav">
+            <a href="index.html">首頁</a>
+            <a href="about.html">關於我們</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="report-header">
+            <div class="project-title">
+                <div class="project-logo">P</div>
+                <h1>Plasma</h1>
+            </div>
+        </section>
+
+        <section class="metrics-grid">
+            <div class="metric-item">
+                <div class="label">綜合評分</div>
+                <div class="value">8.8<span>/10</span></div>
+            </div>
+            <div class="metric-item">
+                <div class="label">市值</div>
+                <div class="value">—</div>
+            </div>
+            <div class="metric-item">
+                <div class="label">狀態</div>
+                <div class="value">主網測試版</div>
+            </div>
+        </section>
+
+        <section class="project-intro">
+            <h2>項目簡介</h2>
+            <p>Plasma是一个专为稳定币构建的高性能EVM兼容Layer-1区块链，旨在通过零手续费USDT转账、原生比特币桥接和强大的DeFi生态系统，成为互联网的稳定币支付轨道。项目由Bitfinex领投，获得了Framework Ventures和Peter Thiel's Founders Fund等顶级机构的支持。</p>
+        </section>
+
+        <section class="notes-section">
+            <h2>分析筆記</h2>
+            <ul class="notes-list">
+                <li class="note-item">
+                    <a href="note_plasma_01.html">
+                        <h3 class="note-title">Plasma深度解析：Bitfinex与Tether的阳谋？挑战TRON霸权的稳定币新L1</h3>
+                        <p class="note-meta">發布於 2025年9月19日</p>
+                        <p class="note-excerpt">
+                            本篇為對Plasma項目的首次全面深度分析。我們將深入探討其背後Bitfinex與Tether的戰略佈局，分析其“零費用USDT轉賬”模式對TRON的衝擊，並評估其代幣經濟學與未來催化劑...
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer class="footer container">
+        <p>© 2025 HiCrypto. All Rights Reserved.</p>
+        <p>本網站所有內容僅供研究參考，不構成任何投資建議。</p>
+    </footer>
+
+</body>
+</html>
